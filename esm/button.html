@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../dist/assets/entry.d3e56b85.css" />
+  </head>
+  <body>
+    <h1>Demo</h1>
+    <div id="app"></div>
+    <script type="module">
+      import { createApp } from "vue/dist/vue.esm-bundler.js";
+      import { SFCButton } from "../dist/cat-ui.mjs";
+
+      createApp({
+        template: `
+        <div>
+          <SFCButton color="blue">蓝色按钮</SFCButton>
+          <SFCButton color="green">绿色按钮</SFCButton>
+          <SFCButton color="gray">灰色按钮</SFCButton>
+          <SFCButton color="yellow">黄色按钮</SFCButton>
+          <SFCButton color="red">红色按钮</SFCButton>
+        </div>
+        `,
+      })
+        .component(SFCButton.name, SFCButton)
+        .mount("#app");
+    </script>
+  </body>
+</html>
