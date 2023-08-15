@@ -4,11 +4,37 @@ const props = {
   color: {
     type: String,
     default: "blue"
+  },
+  size: {
+    type: String,
+    default: "medium"
   }
 };
 const _sfc_main = defineComponent({
   name: "SFCButton",
-  props
+  props,
+  setup() {
+    const sizeMap = {
+      small: {
+        x: "2",
+        y: "1",
+        text: "sm"
+      },
+      medium: {
+        x: "3",
+        y: "1.5",
+        text: "base"
+      },
+      large: {
+        x: "4",
+        y: "2",
+        text: "lg"
+      }
+    };
+    return {
+      sizeMap
+    };
+  }
 });
 const _export_sfc = (sfc, props2) => {
   const target = sfc.__vccOpts || sfc;
@@ -21,6 +47,9 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
   return openBlock(), createElementBlock("div", null, [
     createElementVNode("button", {
       class: normalizeClass([
+        `py-${_ctx.sizeMap[_ctx.size].y}`,
+        `px-${_ctx.sizeMap[_ctx.size].x}`,
+        `text-${_ctx.sizeMap[_ctx.size].text}`,
         "py-2",
         "px-4",
         "font-semibold",

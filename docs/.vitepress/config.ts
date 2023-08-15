@@ -41,7 +41,7 @@ const config = {
         sidebar,
         footer: {
             message: 'Released under the MIT License.',
-            copyright: 'Copyright © 2019-present CatWatermelon'
+            copyright: 'Copyright © 2023 CatWatermelon'
         },
     },
     markdown: {
