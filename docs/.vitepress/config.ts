@@ -1,8 +1,7 @@
 import { demoblockPlugin, demoblockVitePlugin } from 'vitepress-theme-demoblock'
 
 const sidebar = {
-    '/': [
-        { text: '快速开始', link: '/' },
+    '/components/': [
         {
             text: '通用',
             items: [
@@ -19,10 +18,13 @@ const sidebar = {
 const custom = {
     title: 'CatUI 文档',
     description: 'CatUI 组件库文档',
+    siteTitle: 'VitePress-Cat'
 }
 
 const nav = [
     { text: '首页', link: '/' },
+    { text: '起步', link: '/guide/' },
+    { text: '组件', link: '/components/button/' },
     {
         text: '关于',
         items: [
