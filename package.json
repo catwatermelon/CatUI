@@ -23,7 +23,7 @@
     "vite": "3.0.7",
     "vite-plugin-md": "^0.21.5",
     "vite-plugin-vue-markdown": "^0.23.8",
-    "vitepress": "0.22.4",
+    "vitepress": "1.0.0-rc.4",
     "vitepress-theme-demoblock": "1.4.2"
   },
   "dependencies": {

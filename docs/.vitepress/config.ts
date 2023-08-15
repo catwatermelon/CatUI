@@ -3,7 +3,7 @@ const sidebar = {
         { text: '快速开始', link: '/' },
         {
             text: '通用',
-            children: [
+            items: [
                 { text: 'Button 按钮', link: '/components/button/' },
             ]
         },
@@ -17,11 +17,6 @@ const sidebar = {
 const custom = {
     title: 'CatUI 文档',
     description: 'CatUI 组件库文档',
-    locales: {
-        '/': {
-            lang: 'zh-CN'
-        }
-    },
 }
 
 const nav = [
@@ -39,7 +34,7 @@ const config = {
     ...custom,
     themeConfig: {
         sidebar,
-        nav
     }
 }
 export default config
+
