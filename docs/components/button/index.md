@@ -6,15 +6,15 @@
 基础的函数用法
 
 :::demo
-
 ```vue
 <template>
-  <button>默认按钮</button>
-  <button type="primary">主要按钮</button>
-  <button type="success">成功按钮</button>
-  <button type="info">信息按钮</button>
-  <button type="warning">警告按钮</button>
-  <button type="danger">危险按钮</button>
+ <div style="display: flex">
+  <SFCButton color="blue">主要按钮</SFCButton>
+  <SFCButton color="green">绿色按钮</SFCButton>
+  <SFCButton color="gray">灰色按钮</SFCButton>
+  <SFCButton color="yellow">黄色按钮</SFCButton>
+  <SFCButton color="red">红色按钮</SFCButton>
+ </div>
 </template>
 ```
 :::

@@ -9,25 +9,30 @@
     "build": "vite build",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
-    "docs:serve": "vitepress serve docs"
+    "docs:serve": "vitepress serve docs",
+    "docs2:dev": "npm run register:components && vitepress dev docs",
+    "docs2:build": "npm run register:components && vitepress build docs",
+    "docs2:serve": "vitepress serve docs",
+    "register:components": "vitepress-rc"
   },
+  "type": "module",
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@iconify-json/ic": "1.1.4",
     "@types/node": "^20.5.0",
-    "@vitejs/plugin-vue": "3.0.3",
     "@vitejs/plugin-vue-jsx": "^3.0.1",
+    "@vitejs/plugin-vue": "3.0.3",
     "unocss": "0.45.6",
     "vite": "3.0.7",
     "vite-plugin-md": "^0.21.5",
     "vite-plugin-vue-markdown": "^0.23.8",
     "vitepress": "1.0.0-rc.4",
-    "vitepress-theme-demoblock": "1.4.2"
+    "vitepress-theme-demoblock": "^3.0.3"
   },
   "dependencies": {
     "vite-plugin-markdown-preview": "^1.0.4",
-    "vue": "3.2.37"
+    "vue": "^3.3.4"
   }
 }

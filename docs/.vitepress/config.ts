@@ -1,3 +1,5 @@
+import { demoblockPlugin, demoblockVitePlugin } from 'vitepress-theme-demoblock'
+
 const sidebar = {
     '/': [
         { text: '快速开始', link: '/' },
@@ -33,7 +35,20 @@ const nav = [
 const config = {
     ...custom,
     themeConfig: {
+        nav,
         sidebar,
+        footer: {
+            message: 'Released under the MIT License.',
+            copyright: 'Copyright © 2019-present CatWatermelon'
+        },
+    },
+    markdown: {
+        config: (md) => {
+            md.use(demoblockPlugin)
+        }
+    },
+    vite: {
+        plugins: [demoblockVitePlugin()]
     }
 }
 export default config

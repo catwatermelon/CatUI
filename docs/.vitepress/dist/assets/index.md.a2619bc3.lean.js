@@ -1,0 +1,1 @@
+import{_ as e,o as a,c as s,U as t}from"./chunks/framework.1b0bd405.js";const b=JSON.parse('{"title":"CatUI是什么?","description":"","frontmatter":{},"headers":[],"relativePath":"index.md","filePath":"index.md"}'),n={name:"index.md"},l=t("",20),r=[l];function o(p,i,c,h,g,d){return a(),s("div",null,r)}const y=e(n,[["render",o]]);export{b as __pageData,y as default};
