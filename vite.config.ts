@@ -12,7 +12,8 @@ const rollupOptions = {
         globals: {
             vue: "Vue",
         },
-        exports: 'named'
+        exports: 'named',
+        assetFileNames: `assets/[name].[ext]`,
     },
 };
 

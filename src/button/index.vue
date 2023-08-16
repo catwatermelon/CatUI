@@ -1,21 +1,21 @@
 <template>
   <div>
     <button
+      type="button"
       :class="[
+        `text-${ghost ? type2Color[type] + '-600' : 'white'}`,
+        `hover:text-${ghost ? 'white' : type2Color[type] + '-400'}`,
+        `bg-${type2Color[type]}-${ghost ? 200 : 400}`,
+        `hover:bg-${type2Color[type]}-${ghost ? 500 : 500}`,
+        `border-${type2Color[type]}-${ghost ? 500 : 400}`,
+        `hover:border-${type2Color[type]}-500`,
         `py-${sizeMap[size].y}`,
         `px-${sizeMap[size].x}`,
         `text-${sizeMap[size].text}`,
-        'py-2',
-        'px-4',
-        'font-semibold',
-        'rounded-lg',
-        'shadow-md',
-        'text-white',
-        `bg-${$props.color}-500`,
-        { hover: `bg-${$props.color}-700` },
-        'border-none',
+        `${round ? 'rounded-full' : 'rounded-lg'}`,
         'cursor-pointer',
-        'm-1',
+        'transition duration-300 ease-in-out transform hover:scale-105',
+        'mx-1',
       ]"
     >
       <slot></slot>
@@ -26,33 +26,34 @@
 <script lang="ts">
 import "uno.css";
 import { PropType, defineComponent } from "vue";
+import { type2Color } from "../../config/colors";
 
+export type IType = "primary" | "warning" | "danger" | "success" | "default";
 export type ISize = "small" | "medium" | "large";
-export type IColor =
-  | "black"
-  | "gray"
-  | "red"
-  | "yellow"
-  | "green"
-  | "blue"
-  | "indigo"
-  | "purple"
-  | "pink";
+
 export const props = {
-  color: {
-    type: String as PropType<IColor>,
-    default: "blue", // 设定默认颜色
+  type: {
+    type: String as PropType<IType>,
+    default: "default", // 设定默认颜色
   },
   size: {
     type: String as PropType<ISize>,
     default: "medium",
+  },
+  ghost: {
+    type: Boolean,
+    default: false,
+  },
+  round: {
+    type: Boolean,
+    default: false,
   },
 };
 
 export default defineComponent({
   name: "SFCButton",
   props, // 注册属性
-  setup() {
+  setup(props) {
     const sizeMap = {
       small: {
         x: "2",
@@ -61,18 +62,19 @@ export default defineComponent({
       },
       medium: {
         x: "3",
-        y: "1.5",
+        y: "2",
         text: "base",
       },
       large: {
-        x: "4",
-        y: "2",
+        x: "5",
+        y: "3",
         text: "lg",
       },
     };
 
     return {
       sizeMap,
+      type2Color,
     };
   },
 });

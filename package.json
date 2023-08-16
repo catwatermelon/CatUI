@@ -22,9 +22,9 @@
   "devDependencies": {
     "@iconify-json/ic": "1.1.4",
     "@types/node": "^20.5.0",
-    "@vitejs/plugin-vue-jsx": "^3.0.1",
     "@vitejs/plugin-vue": "3.0.3",
-    "unocss": "0.45.6",
+    "@vitejs/plugin-vue-jsx": "^3.0.1",
+    "unocss": "^0.55.1",
     "vite": "3.0.7",
     "vite-plugin-md": "^0.21.5",
     "vite-plugin-vue-markdown": "^0.23.8",

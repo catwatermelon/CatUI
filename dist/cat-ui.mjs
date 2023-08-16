@@ -1,19 +1,34 @@
 import { defineComponent, openBlock, createElementBlock, createElementVNode, normalizeClass, renderSlot } from "vue";
 const __uno = "";
+const type2Color = {
+  primary: "blue",
+  warning: "yellow",
+  danger: "red",
+  success: "green",
+  default: "gray"
+};
 const props = {
-  color: {
+  type: {
     type: String,
-    default: "blue"
+    default: "default"
   },
   size: {
     type: String,
     default: "medium"
+  },
+  ghost: {
+    type: Boolean,
+    default: false
+  },
+  round: {
+    type: Boolean,
+    default: false
   }
 };
 const _sfc_main = defineComponent({
   name: "SFCButton",
   props,
-  setup() {
+  setup(props2) {
     const sizeMap = {
       small: {
         x: "2",
@@ -22,17 +37,18 @@ const _sfc_main = defineComponent({
       },
       medium: {
         x: "3",
-        y: "1.5",
+        y: "2",
         text: "base"
       },
       large: {
-        x: "4",
-        y: "2",
+        x: "5",
+        y: "3",
         text: "lg"
       }
     };
     return {
-      sizeMap
+      sizeMap,
+      type2Color
     };
   }
 });
@@ -46,21 +62,21 @@ const _export_sfc = (sfc, props2) => {
 function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
   return openBlock(), createElementBlock("div", null, [
     createElementVNode("button", {
+      type: "button",
       class: normalizeClass([
+        `text-${_ctx.ghost ? _ctx.type2Color[_ctx.type] + "-600" : "white"}`,
+        `hover:text-${_ctx.ghost ? "white" : _ctx.type2Color[_ctx.type] + "-400"}`,
+        `bg-${_ctx.type2Color[_ctx.type]}-${_ctx.ghost ? 200 : 400}`,
+        `hover:bg-${_ctx.type2Color[_ctx.type]}-${_ctx.ghost ? 500 : 500}`,
+        `border-${_ctx.type2Color[_ctx.type]}-${_ctx.ghost ? 500 : 400}`,
+        `hover:border-${_ctx.type2Color[_ctx.type]}-500`,
         `py-${_ctx.sizeMap[_ctx.size].y}`,
         `px-${_ctx.sizeMap[_ctx.size].x}`,
         `text-${_ctx.sizeMap[_ctx.size].text}`,
-        "py-2",
-        "px-4",
-        "font-semibold",
-        "rounded-lg",
-        "shadow-md",
-        "text-white",
-        `bg-${_ctx.$props.color}-500`,
-        { hover: `bg-${_ctx.$props.color}-700` },
-        "border-none",
+        `${_ctx.round ? "rounded-full" : "rounded-lg"}`,
         "cursor-pointer",
-        "m-1"
+        "transition duration-300 ease-in-out transform hover:scale-105",
+        "mx-1"
       ])
     }, [
       renderSlot(_ctx.$slots, "default")

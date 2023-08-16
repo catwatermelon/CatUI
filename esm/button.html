@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../dist/assets/entry.84ba176f.css" />
+    <link rel="stylesheet" href="../dist/assets/entry.css" />
   </head>
   <body>
     <h1>Demo</h1>
@@ -16,15 +16,21 @@
       createApp({
         template: `
         <div>
-          <SFCButton color="blue">蓝色按钮</SFCButton>
-          <SFCButton color="green">绿色按钮</SFCButton>
-          <SFCButton color="gray">灰色按钮</SFCButton>
-          <SFCButton color="yellow">黄色按钮</SFCButton>
-          <SFCButton color="red">红色按钮</SFCButton>
+          <SFCButton>默认按钮</SFCButton>
+          <SFCButton type="primary">主要按钮</SFCButton>
+          <SFCButton type="danger">危险按钮</SFCButton>
+          <SFCButton type="warning">警告按钮</SFCButton>
+          <SFCButton type="success">成功按钮</SFCButton>
 
-          <SFCButton size="small" plain>小按钮</SFCButton>
-          <SFCButton size="medium" plain>中按钮</SFCButton>
-          <SFCButton size="large" plain>大按钮</SFCButton>
+          <SFCButton>默认按钮</SFCButton>
+          <SFCButton type="primary" ghost>主要按钮</SFCButton>
+          <SFCButton type="danger" ghost>危险按钮</SFCButton>
+          <SFCButton type="warning" ghost>警告按钮</SFCButton>
+          <SFCButton type="success" ghost>成功按钮</SFCButton>
+
+          <SFCButton size="small" ghost>小按钮</SFCButton>
+          <SFCButton size="medium" ghost>中按钮</SFCButton>
+          <SFCButton size="large" ghost>大按钮</SFCButton>
         </div>
         `,
       })
