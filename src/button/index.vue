@@ -18,6 +18,7 @@
         'mx-1',
       ]"
     >
+      <i v-if="icon" :class="[`i-ic-baseline-${icon}`, 'p-3']"></i>
       <slot></slot>
     </button>
   </div>
@@ -47,6 +48,10 @@ export const props = {
   round: {
     type: Boolean,
     default: false,
+  },
+  icon: {
+    type: String as PropType<string>,
+    default: "",
   },
 };
 

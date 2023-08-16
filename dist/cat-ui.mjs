@@ -1,4 +1,4 @@
-import { defineComponent, openBlock, createElementBlock, createElementVNode, normalizeClass, renderSlot } from "vue";
+import { defineComponent, openBlock, createElementBlock, createElementVNode, normalizeClass, createCommentVNode, renderSlot } from "vue";
 const __uno = "";
 const type2Color = {
   primary: "blue",
@@ -23,6 +23,10 @@ const props = {
   round: {
     type: Boolean,
     default: false
+  },
+  icon: {
+    type: String,
+    default: ""
   }
 };
 const _sfc_main = defineComponent({
@@ -79,6 +83,10 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
         "mx-1"
       ])
     }, [
+      _ctx.icon ? (openBlock(), createElementBlock("i", {
+        key: 0,
+        class: normalizeClass([`i-ic-baseline-${_ctx.icon}`, "p-3"])
+      }, null, 2)) : createCommentVNode("", true),
       renderSlot(_ctx.$slots, "default")
     ], 2)
   ]);

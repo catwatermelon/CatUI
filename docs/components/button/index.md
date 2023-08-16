@@ -29,6 +29,14 @@
     <SFCButton size="medium" ghost>中按钮</SFCButton>
     <SFCButton size="large" ghost>大按钮</SFCButton>
  </div>
+
+  <div style="display: flex; gap: 16px; margin-bottom:20px;">
+    <SFCButton type="primary" round icon="search"></SFCButton>
+    <SFCButton type="warning" round icon="edit"></SFCButton>
+    <SFCButton type="danger" round icon="check"></SFCButton>
+    <SFCButton type="success" round icon="message"></SFCButton>
+    <SFCButton type="danger" icon="delete"></SFCButton>
+ </div>
 </template>
 ```
 :::
