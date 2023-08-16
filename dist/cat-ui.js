@@ -32,7 +32,7 @@ const props = {
 const _sfc_main = defineComponent({
   name: "SFCButton",
   props,
-  setup(props2) {
+  setup() {
     const sizeMap = {
       small: {
         x: "2",
@@ -101,3 +101,4 @@ export {
   SFCButton,
   entry as default
 };
+//# sourceMappingURL=cat-ui.js.map
