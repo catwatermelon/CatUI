@@ -15,7 +15,8 @@
     "docs2:dev": "npm run register:components && vitepress dev docs",
     "docs2:build": "npm run register:components && vitepress build docs",
     "docs2:serve": "vitepress serve docs",
-    "register:components": "vitepress-rc"
+    "register:components": "vitepress-rc",
+    "prepare": "husky install"
   },
   "type": "module",
   "keywords": [],
@@ -35,6 +36,7 @@
     "eslint-plugin-json": "^3.1.0",
     "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-vue": "^9.17.0",
+    "husky": "^8.0.3",
     "prettier": "^3.0.2",
     "typescript": "^5.1.6",
     "unocss": "^0.55.1",
