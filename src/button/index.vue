@@ -58,7 +58,7 @@ export const props = {
 export default defineComponent({
   name: "SFCButton",
   props, // 注册属性
-  setup(props) {
+  setup() {
     const sizeMap = {
       small: {
         x: "2",
