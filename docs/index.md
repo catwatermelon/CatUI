@@ -1,11 +1,11 @@
 ---
 layout: home
 
-title: CatUI
+title: MeowUI
 titleTemplate: 对现有UI组件库的补充
 
 hero:
-  name: Cat-UI
+  name: Meow-UI
   text: 定制化个人UI组件库
   image:
     src: /static/images/icon.png
@@ -16,7 +16,7 @@ hero:
     link: /guide/
   - theme: alt
     text: GitHub
-    link: https://github.com/catwatermelon/cat-ui
+    link: https://github.com/catwatermelon/meow-ui
 
 
 

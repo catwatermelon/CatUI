@@ -16,8 +16,8 @@ const sidebar = {
     ]
 }
 const custom = {
-    title: 'CatUI 文档',
-    description: 'CatUI 组件库文档',
+    title: 'MeowUI 文档',
+    description: 'MeowUI 组件库文档',
     siteTitle: 'VitePress-Cat'
 }
 
@@ -28,7 +28,7 @@ const nav = [
     {
         text: '关于',
         items: [
-            { text: 'Github', link: 'https://github.com/catwatermelon/CatUI' },
+            { text: 'Github', link: 'https://github.com/catwatermelon/MeowUI' },
             { text: '掘金', link: 'https://juejin.cn/user/3280598430652264' }
         ]
     }

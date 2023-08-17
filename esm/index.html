@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -11,14 +11,14 @@
     <div id="app"></div>
     <script type="module">
       import { createApp } from "vue/dist/vue.esm-bundler.js";
-      import CatUI from "../dist/cat-ui.js";
+      import MeowUI from "../dist/meow-ui.js";
 
       createApp({
         template: `
-          <SFCButton color="blue">蓝色按钮</SFCButton>
+          <MButton color="blue">蓝色按钮</MButton>
         `,
       })
-        .use(CatUI)
+        .use(MeowUI)
         .mount("#app");
     </script>
   </body>

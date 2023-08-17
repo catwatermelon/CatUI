@@ -3,6 +3,6 @@
 
 import { createApp } from "vue";
 
-import SFCButton from "./entry";
+import MButton from "./entry";
 
-createApp(SFCButton).mount("#app");
+createApp(MButton).mount("#app");

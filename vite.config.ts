@@ -33,8 +33,8 @@ export default defineConfig({
         cssCodeSplit: true,
         lib: {
             entry: "./src/entry.ts",
-            name: "CatUI",
-            fileName: "cat-ui",
+            name: "MeowUI",
+            fileName: "meow-ui",
             // 导出模块格式
             formats: ["es", "umd", "iife"],
         },

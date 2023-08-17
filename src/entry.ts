@@ -1,11 +1,11 @@
 import { App } from "vue";
-import SFCButton from "./button/index.vue";
+import MButton from "./button/index.vue";
 
-export { SFCButton };
+export { MButton };
 
 // 编写一个插件，实现一个install方法
 export default {
   install(app: App): void {
-    app.component(SFCButton.name, SFCButton);
+    app.component(MButton.name, MButton);
   },
 };

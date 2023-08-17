@@ -9,33 +9,33 @@
 ```vue
 <template>
   <div style="display: flex; gap: 16px; margin-bottom:20px;">
-    <SFCButton>默认按钮</SFCButton>
-    <SFCButton type="primary">主要按钮</SFCButton>
-    <SFCButton type="danger">危险按钮</SFCButton>
-    <SFCButton type="warning">警告按钮</SFCButton>
-    <SFCButton type="success">成功按钮</SFCButton>
+    <MButton>默认按钮</MButton>
+    <MButton type="primary">主要按钮</MButton>
+    <MButton type="danger">危险按钮</MButton>
+    <MButton type="warning">警告按钮</MButton>
+    <MButton type="success">成功按钮</MButton>
   </div>
 
   <div style="display: flex; gap: 16px; margin-bottom:20px;">
-    <SFCButton>默认按钮</SFCButton>
-    <SFCButton type="primary" ghost>主要按钮</SFCButton>
-    <SFCButton type="danger" ghost>危险按钮</SFCButton>
-    <SFCButton type="warning" ghost>警告按钮</SFCButton>
-    <SFCButton type="success" ghost>成功按钮</SFCButton>
+    <MButton>默认按钮</MButton>
+    <MButton type="primary" ghost>主要按钮</MButton>
+    <MButton type="danger" ghost>危险按钮</MButton>
+    <MButton type="warning" ghost>警告按钮</MButton>
+    <MButton type="success" ghost>成功按钮</MButton>
   </div>
 
   <div style="display: flex; gap: 16px; margin-bottom:20px;">
-    <SFCButton size="small" ghost>小按钮</SFCButton>
-    <SFCButton size="medium" ghost>中按钮</SFCButton>
-    <SFCButton size="large" ghost>大按钮</SFCButton>
+    <MButton size="small" ghost>小按钮</MButton>
+    <MButton size="medium" ghost>中按钮</MButton>
+    <MButton size="large" ghost>大按钮</MButton>
  </div>
 
   <div style="display: flex; gap: 16px; margin-bottom:20px;">
-    <SFCButton type="primary" round icon="search"></SFCButton>
-    <SFCButton type="warning" round icon="edit"></SFCButton>
-    <SFCButton type="danger" round icon="check"></SFCButton>
-    <SFCButton type="success" round icon="message"></SFCButton>
-    <SFCButton type="danger" icon="delete"></SFCButton>
+    <MButton type="primary" round icon="search"></MButton>
+    <MButton type="warning" round icon="edit"></MButton>
+    <MButton type="danger" round icon="check"></MButton>
+    <MButton type="success" round icon="message"></MButton>
+    <MButton type="danger" icon="delete"></MButton>
  </div>
 </template>
 ```

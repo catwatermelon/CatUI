@@ -30,7 +30,7 @@ const props = {
   }
 };
 const _sfc_main = defineComponent({
-  name: "SFCButton",
+  name: "MButton",
   props,
   setup() {
     const sizeMap = {
@@ -91,14 +91,14 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
     ], 2)
   ]);
 }
-const SFCButton = /* @__PURE__ */ _export_sfc(_sfc_main, [["render", _sfc_render]]);
+const MButton = /* @__PURE__ */ _export_sfc(_sfc_main, [["render", _sfc_render]]);
 const entry = {
   install(app) {
-    app.component(SFCButton.name, SFCButton);
+    app.component(MButton.name, MButton);
   }
 };
 export {
-  SFCButton,
+  MButton,
   entry as default
 };
-//# sourceMappingURL=cat-ui.js.map
+//# sourceMappingURL=meow-ui.js.map

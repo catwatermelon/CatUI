@@ -41,7 +41,7 @@ export const props = {
 };
 
 export default defineComponent({
-  name: "SFCButton",
+  name: "MButton",
   props, // 注册属性
 });
 </script>

@@ -4,14 +4,14 @@ layout: doc
 
 
 
-# Cat-UI是什么?
+# Meow-UI是什么?
 
-[Cat-UI](https://github.com/catwatermelon/cat-ui) 是一个基于 [Vite](https://github.com/vitejs/vite)、 [TypeScript](https://www.typescriptlang.org/) 的定制化个人UI，目标是为开发提供开箱即用的高质量组件。
+[Meow-UI](https://github.com/catwatermelon/meow-ui) 是一个基于 [Vite](https://github.com/vitejs/vite)、 [TypeScript](https://www.typescriptlang.org/) 的定制化个人UI，目标是为开发提供开箱即用的高质量组件。
 
 
 ## 文档
 
-- 文档地址为 [CatUI-doc](https://cat-ui.vercel.app/)，采用 Vitepress 开发。如发现文档有误，欢迎提 pr 帮助我们改进。
+- 文档地址为 [MeowUI-doc](https://meow-ui.vercel.app/)，采用 Vitepress 开发。如发现文档有误，欢迎提 pr 帮助我们改进。
 - 英文文档暂时没有时间来写，欢迎有时间的同学来帮忙写英文文档。
 
 
@@ -21,7 +21,7 @@ layout: doc
 
 ```bash
 # 拉取代码
-git clone https://github.com/catwatermelon/cat-ui.git
+git clone https://github.com/catwatermelon/meow-ui.git
 # 安装依赖
 pnpm install
 # 运行项目
@@ -43,23 +43,23 @@ pnpm docs:dev
 ## 安装
 
 ```bash
-pnpm i cat-ui
+pnpm i meow-ui
 ```
 
 ## 快速开始
 
 ```js
 import Vue from 'vue'
-import CatUI from 'cat-ui'
+import MeowUI from 'meow-ui'
 
 const App = {
     template: `
-        <CButton/>
+        <MButton/>
     `,
 };
 
 createApp(App)
-    .use(CatUI)
+    .use(MeowUI)
     .mount("#app");
 ```
 
