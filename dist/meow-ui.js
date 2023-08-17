@@ -56,6 +56,7 @@ const _sfc_main$1 = defineComponent({
     };
   }
 });
+const index_vue_vue_type_style_index_0_scoped_e6a8efeb_lang = "";
 const _export_sfc = (sfc, props2) => {
   const target = sfc.__vccOpts || sfc;
   for (const [key, val] of props2) {
@@ -63,8 +64,9 @@ const _export_sfc = (sfc, props2) => {
   }
   return target;
 };
+const _hoisted_1$1 = { class: "m-button-wrapper" };
 function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
-  return openBlock(), createElementBlock("div", null, [
+  return openBlock(), createElementBlock("div", _hoisted_1$1, [
     createElementVNode("button", {
       type: "button",
       class: normalizeClass([
@@ -87,11 +89,11 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
         key: 0,
         class: normalizeClass([`i-ic-baseline-${_ctx.icon}`, "p-3"])
       }, null, 2)) : createCommentVNode("", true),
-      renderSlot(_ctx.$slots, "default")
+      renderSlot(_ctx.$slots, "default", {}, void 0, true)
     ], 2)
   ]);
 }
-const MButton = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["render", _sfc_render$1]]);
+const MButton = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["render", _sfc_render$1], ["__scopeId", "data-v-e6a8efeb"]]);
 const props = {
   type: {
     type: String,
@@ -172,7 +174,7 @@ const _sfc_main = defineComponent({
     };
   }
 });
-const index_vue_vue_type_style_index_0_lang = "";
+const index_vue_vue_type_style_index_0_scoped_2b0efb9e_lang = "";
 const _hoisted_1 = { class: "m-input-wrapper" };
 const _hoisted_2 = { class: "text-input" };
 const _hoisted_3 = ["disabled", "type", "placeholder"];
@@ -206,10 +208,11 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
           "text-gray-400",
           "hover:bg-gray-500",
           "p-0.5",
-          "absolute"
+          "absolute",
+          `text-${_ctx.sizeMap[_ctx.size].text}`
         ]),
         onClick: _cache[2] || (_cache[2] = (...args) => _ctx.clear && _ctx.clear(...args))
-      })) : _ctx.icon ? (openBlock(), createElementBlock("i", {
+      }, null, 2)) : _ctx.icon ? (openBlock(), createElementBlock("i", {
         key: 1,
         class: normalizeClass([
           "icon-in",
@@ -217,6 +220,7 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
           "p-0.5",
           "absolute",
           "text-gray-400",
+          `text-${_ctx.sizeMap[_ctx.size].text}`,
           "hover:bg-gray-500"
         ]),
         onClick: _cache[3] || (_cache[3] = (...args) => _ctx.iconClick && _ctx.iconClick(...args))
@@ -224,7 +228,7 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
     ])
   ]);
 }
-const MInput = /* @__PURE__ */ _export_sfc(_sfc_main, [["render", _sfc_render]]);
+const MInput = /* @__PURE__ */ _export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-2b0efb9e"]]);
 const entry = {
   install(app) {
     app.component(MButton.name, MButton);

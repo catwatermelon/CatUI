@@ -84,3 +84,12 @@ export default defineComponent({
   },
 });
 </script>
+
+<style lang="less" scoped>
+.m-button-wrapper {
+  button {
+    border-width: 2px;
+    border-style: solid;
+  }
+}
+</style>

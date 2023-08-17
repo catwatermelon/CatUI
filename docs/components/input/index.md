@@ -76,10 +76,10 @@
 :::demo
 ```vue
 <template>
-  <div style="display: flex; gap: 16px; margin-bottom:20px;">
-    <MInput size="small"/>
-    <MInput />
-    <MInput size="large"/>
+  <div style="display: flex; flex-direction: column ;margin-bottom:20px;">
+    <MInput icon="i-ic-baseline-search" size="small" style="margin-bottom: 20px"/>
+    <MInput icon="i-ic-baseline-search" style="margin-bottom: 20px"/>
+    <MInput icon="i-ic-baseline-search" size="large"/>
   </div>
 </template>
 ```

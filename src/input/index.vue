@@ -27,6 +27,7 @@
           'hover:bg-gray-500',
           'p-0.5',
           'absolute',
+          `text-${sizeMap[size].text}`,
         ]"
         @click="clear"
       ></i>
@@ -38,6 +39,7 @@
           'p-0.5',
           'absolute',
           'text-gray-400',
+          `text-${sizeMap[size].text}`,
           'hover:bg-gray-500',
         ]"
         @click="iconClick"
@@ -117,7 +119,7 @@ export default defineComponent({
     };
 
     const canClear = computed(
-      () => input.value != "" && props.icon === "" && props.clearable,
+      () => input.value != "" && props.icon === "" && props.clearable
     );
     const clear = () => {
       if (props.clearable) {
@@ -146,12 +148,15 @@ export default defineComponent({
 });
 </script>
 
-<style lang="less">
+<style lang="less" scoped>
 .m-input-wrapper {
   .text-input {
     display: inline-block;
     position: relative;
-
+    input {
+      border-width: 2px;
+      border-style: solid;
+    }
     .icon-in {
       right: 0.5rem;
       top: 50%;

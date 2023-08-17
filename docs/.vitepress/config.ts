@@ -29,7 +29,7 @@ const nav = [
     {
         text: '关于',
         items: [
-            { text: 'Github', link: 'https://github.com/catwatermelon/MeowUI' },
+            { text: 'Github', link: 'https://github.com/catwatermelon/meow-ui' },
             { text: '掘金', link: 'https://juejin.cn/user/3280598430652264' }
         ]
     }
