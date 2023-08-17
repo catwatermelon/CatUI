@@ -1,9 +1,5 @@
-<<<<<<< HEAD
-# MeowUI
-=======
-# 🎉 Cat-UI 
-
-
+# 🎉 MeowUI-UI 
+ 
 
 ## Features
 
@@ -51,4 +47,3 @@ Modern browsers and Internet Explorer 10+.
 
 
 Copyright (c) 2022 - present RuiNan (Scott) Peng
->>>>>>> 326b265fdd97ce4b6a0dd61ab62c4ec76661cd2f
