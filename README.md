@@ -1,4 +1,4 @@
-# 🎉 MeowUI-UI 
+# 🎉 Meow-UI 
  
 
 ## Features
@@ -16,23 +16,23 @@
 ## Install
 
 ```bash
-npm i cat-ui
+npm i meow-ui
 ```
 
 ## Quick Start
 
 ```js
 import Vue from 'vue'
-import CatUI from 'cat-ui'
+import CatUI from 'meow-ui'
 
 const App = {
     template: `
-        <SFCButton/>
+        <MButton/>
     `,
 };
 
 createApp(App)
-    .use(CatUI)
+    .use(MeowUI)
     .mount("#app");
 ```
 
