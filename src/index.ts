@@ -1,8 +1,14 @@
-// const s: string = 'Hello Typescript'
-// console.log(s)
+import { createApp } from "vue/dist/vue.esm-bundler.js";
 
-import { createApp } from "vue";
+import MeowUI from "./entry";
 
-import MButton from "./entry";
-
-createApp(MButton).mount("#app");
+createApp({
+    template: `
+        <div>
+            <MInput  clearable/>
+            <MButton type="primary">主要按钮</MButton>
+        </div>
+    `,
+})
+    .use(MeowUI)
+    .mount("#app");
