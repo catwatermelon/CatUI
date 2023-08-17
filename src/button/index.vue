@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="m-button-wrapper">
     <button
       type="button"
       :class="[
