@@ -30,7 +30,7 @@ npm i meow-ui
 
 ```js
 import Vue from 'vue'
-import CatUI from 'meow-ui'
+import MeowUI from 'meow-ui'
 
 const App = {
     template: `
