@@ -8,7 +8,7 @@ hero:
   name: Meow-UI
   text: 定制化个人UI组件库
   image:
-    src: /static/images/icon.png
+    src: https://www.hdykg.top/meow/icon.png
     alt: Cat
   actions:
   - theme: brand
