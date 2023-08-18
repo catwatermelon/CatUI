@@ -15,6 +15,7 @@
     "register:components": "vitepress-rc",
     "prepare": "husky install"
   },
+  "homepage": "https://meow-ui.vercel.app/",
   "type": "module",
   "keywords": [],
   "author": "",
