@@ -28,4 +28,3 @@ jobs:
           NPM_AUTH_TOKEN: ${{ secrets.MEOW_UI_AUTH_TOKEN }} # 跟前面步骤中的 NPM_AUTH_TOKEN 保持一致
         with:
           default_branch: "publish-meow-ui-vite"
-          dir: " ./dist"
