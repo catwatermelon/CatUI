@@ -7,8 +7,6 @@ on:
   release:
     types: [created]
   push:
-		#分支可以选择多个，如：master、main、release
-  	#监听main分支的push操作，只要main分支发生push操作，即会运行发布代码
     branches:
       - publish-meow-ui-vite
 jobs:
