@@ -2,9 +2,9 @@
  
 
 <p align="center">
-    <img src="https://img.shields.io/npm/v/scott-ui?color=c95f8b&amp;label=" alt="NPM version">
+    <img src="https://img.shields.io/npm/v/meow-ui?color=c95f8b&amp;label=" alt="NPM version">
     <img src="https://github.com/catwatermelon/meow-ui/actions/workflows/main.yml/badge.svg?branch=master" alt="CI" style="max-width: 100%;"/>
-    <img src="https://img.shields.io/github/license/iscottt/scott-ui?color=red"/>
+    <img src="https://img.shields.io/github/license/catwatermelon/meow-ui?color=red"/>
 </p>
 
 
