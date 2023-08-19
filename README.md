@@ -53,4 +53,4 @@ Modern browsers and Internet Explorer 10+.
 [MIT](LICENSE)
 
 
-Copyright (c) 2022 - present RuiNan (Scott) Peng
+Copyright (c) 2023 Zhen Tong (catwatermelon) Ling
