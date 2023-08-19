@@ -119,7 +119,7 @@ export default defineComponent({
     };
 
     const canClear = computed(
-      () => input.value != "" && props.icon === "" && props.clearable
+      () => input.value != "" && props.icon === "" && props.clearable,
     );
     const clear = () => {
       if (props.clearable) {
