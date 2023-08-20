@@ -22,8 +22,8 @@ jobs:
         with:
           node-version: 16
           registry-url: https://registry.npmjs.org/
-      - run: cd ./packages/meow-ui-vite pnpm install
-      - run: cd ./packages/meow-ui-vite npm run build
+      - run: cd ./packages/meow-ui-vite && pnpm install
+      - run: cd ./packages/meow-ui-vite && npm run build
       - run: npm publish ./packages/meow-ui-vite/dist
         env:
           NODE_AUTH_TOKEN: ${{secrets.MEOW_UI_NPM_TOKEN}}
