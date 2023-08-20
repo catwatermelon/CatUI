@@ -5,15 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint --fix --ext .ts,.vue ./src",
-    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.vue\"",
     "dev": "vite",
     "build": "vite build",
-    "docs:dev": "npm run register:components && vitepress dev docs",
-    "docs:build": "npm run register:components && vitepress build docs",
-    "docs:serve": "vitepress serve docs",
-    "register:components": "vitepress-rc",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "preinstall": "npx only-allow pnpm"
   },
   "homepage": "https://meow-ui.vercel.app/",
   "type": "module",
@@ -23,33 +18,10 @@
   "devDependencies": {
     "@commitlint/cli": "^17.7.1",
     "@commitlint/config-conventional": "^17.7.0",
-    "@iconify-json/ic": "1.1.4",
-    "@types/node": "^20.5.0",
-    "@typescript-eslint/eslint-plugin": "^6.4.0",
-    "@typescript-eslint/parser": "^6.4.0",
-    "@vitejs/plugin-vue": "3.0.3",
-    "@vitejs/plugin-vue-jsx": "^3.0.1",
-    "@vue/eslint-config-prettier": "^8.0.0",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^8.47.0",
-    "eslint-formatter-pretty": "^5.0.0",
-    "eslint-plugin-json": "^3.1.0",
-    "eslint-plugin-prettier": "^5.0.0",
-    "eslint-plugin-vue": "^9.17.0",
-    "husky": "^8.0.3",
-    "less": "^4.2.0",
-    "prettier": "^3.0.2",
-    "terser": "^5.19.2",
-    "typescript": "^5.1.6",
-    "unocss": "^0.55.1",
-    "vite": "3.0.7",
-    "vite-plugin-md": "^0.21.5",
-    "vite-plugin-vue-markdown": "^0.23.8",
-    "vitepress": "1.0.0-rc.4",
-    "vitepress-theme-demoblock": "^3.0.3"
+    "husky": "^8.0.3"
   },
   "dependencies": {
-    "vite-plugin-markdown-preview": "^1.0.4",
+    "vite": "3.0.7",
     "vue": "^3.3.4"
   }
 }
