@@ -1,4 +1,6 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-npx pnpm lint
+echo ====代码静态检查====
+cd packages/meow-ui-vite
+pnpm lint
