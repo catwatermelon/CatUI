@@ -7,6 +7,7 @@ const sidebar = {
             items: [
                 { text: 'Button 按钮', link: '/components/button/' },
                 { text: 'Input 输入框', link: '/components/input/' },
+                { text: 'Switch 开关', link: '/components/switch/' },
             ]
         },
         { text: '导航' },

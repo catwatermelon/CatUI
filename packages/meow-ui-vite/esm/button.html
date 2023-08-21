@@ -11,30 +11,16 @@
     <div id="app"></div>
     <script type="module">
       import { createApp } from "vue/dist/vue.esm-bundler.js";
-      import { MButton } from "../dist/meow-ui.js";
+      import { MSwitch } from "../dist/meow-ui.mjs";
 
       createApp({
         template: `
         <div>
-          <MButton>默认按钮</MButton>
-          <MButton type="primary">主要按钮</MButton>
-          <MButton type="danger">危险按钮</MButton>
-          <MButton type="warning">警告按钮</MButton>
-          <MButton type="success">成功按钮</MButton>
-
-          <MButton>默认按钮</MButton>
-          <MButton type="primary" ghost>主要按钮</MButton>
-          <MButton type="danger" ghost>危险按钮</MButton>
-          <MButton type="warning" ghost>警告按钮</MButton>
-          <MButton type="success" ghost>成功按钮</MButton>
-
-          <MButton size="small" ghost>小按钮</MButton>
-          <MButton size="medium" ghost>中按钮</MButton>
-          <MButton size="large" ghost>大按钮</MButton>
+          <MSwitch inactive-text='34'></MSwitch>
         </div>
         `,
       })
-        .component(MButton.name, MButton)
+        .component(MSwitch.name, MSwitch)
         .mount("#app");
     </script>
   </body>
