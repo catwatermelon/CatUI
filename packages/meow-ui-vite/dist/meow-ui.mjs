@@ -1,4 +1,4 @@
-import { defineComponent, openBlock, createElementBlock, createElementVNode, normalizeClass, createCommentVNode, renderSlot, computed, ref, withDirectives, vModelDynamic, toDisplayString } from "vue";
+import { defineComponent, openBlock, createElementBlock, createElementVNode, normalizeClass, createCommentVNode, renderSlot, computed, ref, withDirectives, vModelDynamic, toDisplayString, resolveComponent, Fragment, renderList, createTextVNode, createBlock } from "vue";
 const __uno = "";
 const type2Color = {
   primary: "blue",
@@ -29,7 +29,7 @@ const props$2 = {
     default: ""
   }
 };
-const _sfc_main$2 = defineComponent({
+const _sfc_main$3 = defineComponent({
   name: "MButton",
   props: props$2,
   setup() {
@@ -64,9 +64,9 @@ const _export_sfc = (sfc, props2) => {
   }
   return target;
 };
-const _hoisted_1$2 = { class: "m-button-wrapper" };
-function _sfc_render$2(_ctx, _cache, $props, $setup, $data, $options) {
-  return openBlock(), createElementBlock("div", _hoisted_1$2, [
+const _hoisted_1$3 = { class: "m-button-wrapper" };
+function _sfc_render$3(_ctx, _cache, $props, $setup, $data, $options) {
+  return openBlock(), createElementBlock("div", _hoisted_1$3, [
     createElementVNode("button", {
       type: "button",
       class: normalizeClass([
@@ -93,7 +93,7 @@ function _sfc_render$2(_ctx, _cache, $props, $setup, $data, $options) {
     ], 2)
   ]);
 }
-const MButton = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["render", _sfc_render$2], ["__scopeId", "data-v-e6a8efeb"]]);
+const MButton = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["render", _sfc_render$3], ["__scopeId", "data-v-e6a8efeb"]]);
 const props$1 = {
   type: {
     type: String,
@@ -124,7 +124,7 @@ const props$1 = {
     default: false
   }
 };
-const _sfc_main$1 = defineComponent({
+const _sfc_main$2 = defineComponent({
   name: "MInput",
   props: props$1,
   emits: ["update:input", "iconClick"],
@@ -174,13 +174,13 @@ const _sfc_main$1 = defineComponent({
     };
   }
 });
-const index_vue_vue_type_style_index_0_scoped_2b0efb9e_lang = "";
-const _hoisted_1$1 = { class: "m-input-wrapper" };
-const _hoisted_2$1 = { class: "text-input" };
-const _hoisted_3$1 = ["disabled", "type", "placeholder"];
-function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
-  return openBlock(), createElementBlock("div", _hoisted_1$1, [
-    createElementVNode("div", _hoisted_2$1, [
+const index_vue_vue_type_style_index_0_scoped_59d2c179_lang = "";
+const _hoisted_1$2 = { class: "m-input-wrapper" };
+const _hoisted_2$2 = { class: "text-input" };
+const _hoisted_3$2 = ["disabled", "type", "placeholder"];
+function _sfc_render$2(_ctx, _cache, $props, $setup, $data, $options) {
+  return openBlock(), createElementBlock("div", _hoisted_1$2, [
+    createElementVNode("div", _hoisted_2$2, [
       withDirectives(createElementVNode("input", {
         onInput: _cache[0] || (_cache[0] = (...args) => _ctx.onInput && _ctx.onInput(...args)),
         "onUpdate:modelValue": _cache[1] || (_cache[1] = ($event) => _ctx.input = $event),
@@ -197,7 +197,7 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
         disabled: _ctx.disabled,
         type: _ctx.password ? "password" : "text",
         placeholder: _ctx.placeholder
-      }, null, 42, _hoisted_3$1), [
+      }, null, 42, _hoisted_3$2), [
         [vModelDynamic, _ctx.input]
       ]),
       _ctx.canClear ? (openBlock(), createElementBlock("i", {
@@ -228,7 +228,7 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
     ])
   ]);
 }
-const MInput = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["render", _sfc_render$1], ["__scopeId", "data-v-2b0efb9e"]]);
+const MInput = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["render", _sfc_render$2], ["__scopeId", "data-v-59d2c179"]]);
 const sizeMap = {
   small: {
     x: "2",
@@ -277,12 +277,11 @@ const props = {
     default: false
   }
 };
-const _sfc_main = defineComponent({
+const _sfc_main$1 = defineComponent({
   name: "MSwitch",
   props,
   emits: ["update:input"],
   setup(props2, { emit }) {
-    props2.value;
     const changeCheck = (e) => {
       emit("update:input", e.checked);
     };
@@ -292,41 +291,109 @@ const _sfc_main = defineComponent({
     };
   }
 });
-const index_vue_vue_type_style_index_0_scoped_7ee13956_lang = "";
-const _hoisted_1 = { class: "m-switch-wrapper" };
-const _hoisted_2 = {
+const index_vue_vue_type_style_index_0_scoped_04544dfe_lang = "";
+const _hoisted_1$1 = { class: "m-switch-wrapper" };
+const _hoisted_2$1 = {
   key: 0,
   class: "m-r-1"
 };
-const _hoisted_3 = ["disabled"];
+const _hoisted_3$1 = ["disabled"];
 const _hoisted_4 = {
   key: 1,
   class: "m-l-1"
 };
-function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
-  return openBlock(), createElementBlock("div", _hoisted_1, [
-    _ctx.inactiveText ? (openBlock(), createElementBlock("span", _hoisted_2, toDisplayString(_ctx.inactiveText), 1)) : createCommentVNode("", true),
+function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
+  return openBlock(), createElementBlock("div", _hoisted_1$1, [
+    _ctx.inactiveText ? (openBlock(), createElementBlock("span", _hoisted_2$1, toDisplayString(_ctx.inactiveText), 1)) : createCommentVNode("", true),
     createElementVNode("input", {
       class: normalizeClass(["switch-btn"]),
       type: "checkbox",
       disabled: _ctx.disabled,
       onChange: _cache[0] || (_cache[0] = (...args) => _ctx.changeCheck && _ctx.changeCheck(...args))
-    }, null, 40, _hoisted_3),
+    }, null, 40, _hoisted_3$1),
     _ctx.activeText ? (openBlock(), createElementBlock("span", _hoisted_4, toDisplayString(_ctx.activeText), 1)) : createCommentVNode("", true)
   ]);
 }
-const MSwitch = /* @__PURE__ */ _export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-7ee13956"]]);
+const MSwitch = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["render", _sfc_render$1], ["__scopeId", "data-v-04544dfe"]]);
+const _sfc_main = defineComponent({
+  name: "MTree",
+  components: {},
+  props: {
+    list: {
+      type: Array,
+      default: () => []
+    },
+    showChildren: {
+      type: Boolean,
+      default: false
+    },
+    selectedList: {
+      type: Array,
+      default: () => []
+    }
+  },
+  setup(props2, { emit }) {
+    const toggleDisplay = (item) => {
+      item.show = !item.show;
+    };
+    const selectedItem = (item) => {
+      const data = props2.selectedList.slice().concat(item.name);
+      emit("selectedItem", data);
+    };
+    return { toggleDisplay, selectedItem };
+  }
+});
+const index_vue_vue_type_style_index_0_scoped_0d0527b8_lang = "";
+const _hoisted_1 = { class: "m-tree" };
+const _hoisted_2 = ["onClick"];
+const _hoisted_3 = ["onClick"];
+function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
+  const _component_MTree = resolveComponent("MTree");
+  return openBlock(), createElementBlock("div", _hoisted_1, [
+    (openBlock(true), createElementBlock(Fragment, null, renderList(_ctx.list, (item, index) => {
+      var _a;
+      return openBlock(), createElementBlock("div", { key: index }, [
+        createElementVNode("div", {
+          class: "root",
+          onClick: ($event) => _ctx.selectedItem(item)
+        }, [
+          ((_a = item.children) == null ? void 0 : _a.length) ? (openBlock(), createElementBlock("span", {
+            key: 0,
+            class: "arrow",
+            onClick: ($event) => _ctx.toggleDisplay(item)
+          }, [
+            createElementVNode("i", {
+              class: normalizeClass([
+                "icon",
+                item.show ? "i-ic-arrow-drop-down" : "i-ic-arrow-drop-up"
+              ])
+            }, null, 2)
+          ], 8, _hoisted_3)) : createCommentVNode("", true),
+          createTextVNode(" " + toDisplayString(item.name), 1)
+        ], 8, _hoisted_2),
+        item.show ? (openBlock(), createBlock(_component_MTree, {
+          key: 0,
+          list: item.children,
+          selectedList: _ctx.selectedList.slice().concat(item.name)
+        }, null, 8, ["list", "selectedList"])) : createCommentVNode("", true)
+      ]);
+    }), 128))
+  ]);
+}
+const MTree = /* @__PURE__ */ _export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-0d0527b8"]]);
 const entry = {
   install(app) {
     app.component(MButton.name, MButton);
     app.component(MInput.name, MInput);
     app.component(MSwitch.name, MSwitch);
+    app.component(MTree.name, MTree);
   }
 };
 export {
   MButton,
   MInput,
   MSwitch,
+  MTree,
   entry as default
 };
 //# sourceMappingURL=meow-ui.mjs.map

@@ -90,7 +90,7 @@ export default defineComponent({
     border-radius: 31px;
     background-color: #e9e9eb;
     width: 46px;
-    height: 24px;
+    height: 23px;
   }
   .switch-btn {
     position: relative;
@@ -101,18 +101,16 @@ export default defineComponent({
     &::before {
       position: absolute;
       content: "";
-      left: 2px;
-      top: 1px;
       transition: all 300ms cubic-bezier(0.45, 1, 0.4, 1);
       .btn;
     }
     &::after {
       position: absolute;
       left: 2px;
-      top: 1px;
+      top: 2px;
       border-radius: 50%;
       width: 20px;
-      height: 20px;
+      height: 19px;
       background-color: #fff;
       box-shadow: 1px 1px 5px rgba(#000, 0.3);
       content: "";
