@@ -36,7 +36,7 @@ const safelist = [
         "delete",
         "add",
         "share",
-        'ic:outline-cancel'
+        'ic:outline-cancel',
     ].map((v) => `i-ic-baseline-${v}`),
     ...[
         'cancel'

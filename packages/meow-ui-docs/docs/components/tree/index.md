@@ -1,8 +1,13 @@
-import { createApp } from "vue/dist/vue.esm-bundler.js";
+# Tree 树形结构
+用清晰的层级结构展示信息，可展开或折叠。
 
-import MeowUI from "./entry";
+## 基础用法
 
-const list = [
+:::demo
+```vue
+<template>
+  <div style="display: flex; gap: 16px; margin-bottom:20px;">
+    <MTree :list="[
     {
         name: '1',
         show: true,
@@ -59,21 +64,9 @@ const list = [
         children: []
     }
 ]
+"></MTree>
+  </div>
+</template>
+```
+:::
 
-createApp({
-    template: `
-        <div>
-            <MTree :list="list"></MTree>
-            <MSwitch inactive-text="34" ></MSwitch>
-            <MInput  clearable/>
-            <MButton type="primary">主要按钮</MButton>
-        </div>
-    `,
-    data() {
-        return {
-            list
-        }
-    }
-})
-    .use(MeowUI)
-    .mount("#app");

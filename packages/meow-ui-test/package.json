@@ -7,9 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vite"
   },
+  "homepage": "https://meow-ui.vercel.app/",
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "meow-ui-vite": "workspace:^1.0.0"
   }
