@@ -1,27 +1,25 @@
 <template>
-  <div class="m-button-wrapper">
-    <button
-      type="button"
-      :class="[
-        `text-${ghost ? type2Color[type] + '-600' : 'white'}`,
-        `hover:text-${ghost ? 'white' : type2Color[type] + '-400'}`,
-        `bg-${type2Color[type]}-${ghost ? 200 : 400}`,
-        `hover:bg-${type2Color[type]}-${ghost ? 500 : 500}`,
-        `border-${type2Color[type]}-${ghost ? 500 : 400}`,
-        `hover:border-${type2Color[type]}-500`,
-        `py-${sizeMap[size].y}`,
-        `px-${sizeMap[size].x}`,
-        `text-${sizeMap[size].text}`,
-        `${round ? 'rounded-full' : 'rounded-lg'}`,
-        'cursor-pointer',
-        'transition duration-300 ease-in-out transform hover:scale-105',
-        'mx-1',
-      ]"
-    >
-      <i v-if="icon" :class="[`i-ic-baseline-${icon}`, 'p-3']"></i>
-      <slot></slot>
-    </button>
-  </div>
+  <button
+    type="button"
+    :class="[
+      `text-${ghost ? type2Color[type] + '-600' : 'white'}`,
+      `hover:text-${ghost ? 'white' : type2Color[type] + '-400'}`,
+      `bg-${type2Color[type]}-${ghost ? 200 : 400}`,
+      `hover:bg-${type2Color[type]}-${ghost ? 500 : 500}`,
+      `border-${type2Color[type]}-${ghost ? 500 : 400}`,
+      `hover:border-${type2Color[type]}-500`,
+      `py-${sizeMap[size].y}`,
+      `px-${sizeMap[size].x}`,
+      `text-${sizeMap[size].text}`,
+      `${round ? 'rounded-full' : 'rounded-lg'}`,
+      'cursor-pointer',
+      'transition duration-300 ease-in-out transform hover:scale-105',
+      'mx-1',
+    ]"
+  >
+    <i v-if="icon" :class="[`i-ic-baseline-${icon}`, 'p-3']"></i>
+    <slot></slot>
+  </button>
 </template>
 
 <script lang="ts">
