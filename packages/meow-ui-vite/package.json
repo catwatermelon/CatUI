@@ -1,9 +1,32 @@
 {
   "name": "meow-ui-vite",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Ui for meow component",
-  "main": "index.js",
   "homepage": "https://meow-ui.vercel.app/",
+  "keywords": [
+    "UI component, Vue3, Vite, Monorepo"
+  ],
+  "author": "CatWatermelon",
+  "license": "MIT",
+  "main": "./dist/meow-ui.mjs",
+  "module": "./dist/meow-ui.mjs",
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md",
+    "package.json",
+    "index.html"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/meow-ui.mjs",
+      "require": "./dist/meow-ui.umd.js"
+    },
+    "./dist/assets/entry.css": {
+      "import": "./dist/assets/entry.css",
+      "require": "./dist/assets/entry.css"
+    }
+  },
   "scripts": {
     "test": "vitest",
     "test:run": "vitest run",
@@ -13,9 +36,6 @@
     "dev": "vite",
     "build": "vite build"
   },
-  "keywords": [],
-  "author": "CatWatermelon",
-  "license": "MIT",
   "devDependencies": {
     "@commitlint/cli": "^17.7.1",
     "@commitlint/config-conventional": "^17.7.0",
